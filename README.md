@@ -1,6 +1,8 @@
 # fundamentos-web-fase2-mercadinho-tradicao
 Fase 2 do projeto da disciplina de Fundamentos de Sistemas Web.
+
 Ajustes realizados em relação à fase 1:
+
 Inclusão do Bootstrap 5 para carrossel, grid e cartões.
 Criação de estilos mínimos em styles.css para contraste e layout.
 Implementação de saudação dinâmica baseada no horário.
