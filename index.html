@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mercadinho Tradição</title>
+  <meta name="description" content="Mercadinho Tradição - Ofertas, serviços e agendamento de entrega ou retirada.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light">
+<header class="bg-white border-bottom sticky-top" role="banner">
+  <nav class="navbar navbar-expand-lg container" aria-label="Navegação principal">
+    <a class="navbar-brand fw-bold" href="#top">Mercadinho Tradição</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Alternar navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#ofertas">Ofertas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+        <li class="nav-item"><a class="nav-link" href="#cadastro">Cadastro e Agendamento</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main id="top" class="pb-5" role="main">
+  <section class="container py-3">
+    <p id="saudacao" class="lead" aria-live="polite"></p>
+  </section>
+
+  <section class="container pb-4" aria-label="Ofertas em destaque">
+    <div id="carouselOfertas" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselOfertas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselOfertas" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselOfertas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner rounded-4 shadow-sm">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="assets/placeholder_frutas.jpg" class="d-block w-100" alt="Cesta de frutas frescas em promoção">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Feira da Semana</h5>
+            <p>Frutas selecionadas com preço especial.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="assets/placeholder_padaria.jpg" class="d-block w-100" alt="Pães artesanais recém assados">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Padaria</h5>
+            <p>Pães artesanais saindo do forno.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="assets/placeholder_laticinios.jpg" class="d-block w-100" alt="Laticínios variados em prateleira refrigerada">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Laticínios</h5>
+            <p>Qualidade garantida do campo à sua mesa.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselOfertas" data-bs-slide="prev" aria-label="Slide anterior">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselOfertas" data-bs-slide="next" aria-label="Próximo slide">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </section>
+
+  <section id="ofertas" class="container py-4">
+    <h2 class="h4 mb-3">Categorias e produtos</h2>
+    <div class="row g-3">
+      <div class="col-12 col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title h5">Frutas</h3>
+            <ul class="list-unstyled mb-0">
+              <li class="d-flex align-items-start gap-2 py-2">
+                <img src="assets/placeholder_maca.jpg" width="64" height="64" class="rounded" alt="Maçã vermelha">
+                <div><strong>Maçã</strong><br><span class="text-muted">R$ 8,90/kg</span></div>
+              </li>
+              <li class="d-flex align-items-start gap-2 py-2">
+                <img src="assets/placeholder_banana.jpg" width="64" height="64" class="rounded" alt="Banana prata">
+                <div><strong>Banana</strong><br><span class="text-muted">R$ 6,50/kg</span></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title h5">Padaria</h3>
+            <ul class="list-unstyled mb-0">
+              <li class="d-flex align-items-start gap-2 py-2">
+                <img src="assets/placeholder_pao.jpg" width="64" height="64" class="rounded" alt="Pão francês">
+                <div><strong>Pão francês</strong><br><span class="text-muted">R$ 12,90/kg</span></div>
+              </li>
+              <li class="d-flex align-items-start gap-2 py-2">
+                <img src="assets/placeholder_bolo.jpg" width="64" height="64" class="rounded" alt="Bolo de chocolate">
+                <div><strong>Bolo de chocolate</strong><br><span class="text-muted">R$ 24,90/un</span></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title h5">Laticínios</h3>
+            <ul class="list-unstyled mb-0">
+              <li class="d-flex align-items-start gap-2 py-2">
+                <img src="assets/placeholder_leite.jpg" width="64" height="64" class="rounded" alt="Leite integral 1 litro">
+                <div><strong>Leite integral</strong><br><span class="text-muted">R$ 4,99/un</span></div>
+              </li>
+              <li class="d-flex align-items-start gap-2 py-2">
+                <img src="assets/placeholder_queijo.jpg" width="64" height="64" class="rounded" alt="Queijo muçarela fatiado">
+                <div><strong>Queijo muçarela</strong><br><span class="text-muted">R$ 39,90/kg</span></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos" class="container py-4">
+    <h2 class="h4 mb-3">Serviços</h2>
+    <ul class="list-group">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Tele-entrega (até 5 km)
+        <span class="badge bg-primary rounded-pill">R$ 8,00</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Retirada no local
+        <span class="badge bg-success rounded-pill">Grátis</span>
+      </li>
+    </ul>
+  </section>
+
+  <section id="cadastro" class="container py-4">
+    <h2 class="h4 mb-3">Cadastro do cliente e agendamento</h2>
+    <form id="formCadastro" novalidate class="needs-validation" aria-describedby="statusForm">
+      <fieldset class="mb-3">
+        <legend class="h6">Dados pessoais</legend>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="nome" class="form-label">Nome completo</label>
+            <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite seu nome" required>
+            <div class="invalid-feedback">Informe o nome.</div>
+          </div>
+          <div class="col-md-6">
+            <label for="cpf" class="form-label">CPF</label>
+            <input type="text" id="cpf" name="cpf" class="form-control" placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+            <div class="form-text">Formato: 000.000.000-00</div>
+            <div class="invalid-feedback">Informe um CPF no formato 000.000.000-00.</div>
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="voce@exemplo.com" required>
+            <div class="invalid-feedback">Informe um e-mail válido.</div>
+          </div>
+          <div class="col-md-6">
+            <label for="telefone" class="form-label">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" class="form-control" placeholder="(00) 00000-0000" pattern="\(\d{2}\) \d{5}-\d{4}" required>
+            <div class="form-text">Formato: (00) 00000-0000</div>
+            <div class="invalid-feedback">Informe um telefone no formato (00) 00000-0000.</div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label d-block">Sexo</label>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="sexo" id="sexoF" value="Feminino" required>
+              <label class="form-check-label" for="sexoF">Feminino</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="sexo" id="sexoM" value="Masculino" required>
+              <label class="form-check-label" for="sexoM">Masculino</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="sexo" id="sexoO" value="Outro" required>
+              <label class="form-check-label" for="sexoO">Outro</label>
+            </div>
+            <div class="invalid-feedback d-block">Selecione uma opção.</div>
+          </div>
+          <div class="col-md-6">
+            <label for="endereco" class="form-label">Endereço</label>
+            <input type="text" id="endereco" name="endereco" class="form-control" placeholder="Rua, número, bairro, cidade">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="mb-3">
+        <legend class="h6">Agendamento</legend>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label d-block">Forma de atendimento</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="servico" id="retirada" value="retirada" checked>
+              <label class="form-check-label" for="retirada">Retirada no local</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="servico" id="entrega" value="entrega">
+              <label class="form-check-label" for="entrega">Tele-entrega</label>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="data" class="form-label">Data</label>
+            <input type="date" id="data" name="data" class="form-control" required>
+            <div class="invalid-feedback">Selecione uma data.</div>
+          </div>
+          <div class="col-md-3">
+            <label for="hora" class="form-label">Hora</label>
+            <input type="time" id="hora" name="hora" class="form-control" required>
+            <div class="invalid-feedback">Selecione um horário.</div>
+          </div>
+          <div id="blocoEnderecoEntrega" class="col-12 d-none">
+            <label for="enderecoEntrega" class="form-label">Endereço para entrega</label>
+            <input type="text" id="enderecoEntrega" name="enderecoEntrega" class="form-control" placeholder="Rua, número, bairro, cidade">
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" value="" id="aceite" required>
+        <label class="form-check-label" for="aceite">
+          Confirmo que os dados estão corretos
+        </label>
+        <div class="invalid-feedback">É necessário confirmar.</div>
+      </div>
+
+      <button class="btn btn-primary" type="submit">Enviar cadastro</button>
+      <p id="statusForm" class="mt-3" aria-live="polite"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="bg-dark text-white py-4 mt-5" role="contentinfo">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <p class="mb-2 mb-md-0">© 2025 Mercadinho Tradição</p>
+    <nav aria-label="Links de rodapé">
+      <a class="text-white me-3" href="#top">Início</a>
+      <a class="text-white me-3" href="#ofertas">Ofertas</a>
+      <a class="text-white" href="#cadastro">Cadastro</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHzC" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>

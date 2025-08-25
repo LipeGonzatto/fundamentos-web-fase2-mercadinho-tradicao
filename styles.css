@@ -1,0 +1,5 @@
+:root{--brand:#0d6efd}
+#saudacao{font-weight:500}
+.carousel .carousel-item img{max-height:420px; object-fit:cover}
+.card img{object-fit:cover}
+footer a{text-decoration:none}
